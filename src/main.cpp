@@ -41,7 +41,7 @@ void sendRequest(float temperature, float moisture) {
   
   WiFiClient client;
   HTTPClient http;
-  http.begin(client, "http://ec2-18-220-239-10.us-east-2.compute.amazonaws.com:5900/current-params");
+  http.begin(client, "url-http"); //Não mostro a url por questão de segurança
   http.addHeader("Content-Type", "application/json");
 
   // Crie um novo objeto JSON com nome e idade
